@@ -1,0 +1,103 @@
+*{
+  box-sizing: border-box; 
+  }
+  body{
+    background-color: rgb(18, 27, 27);
+  }
+  
+  .container{
+    display: flex;
+    /* justify-content: center; center the items horizontally */
+    align-items: center; /* center the items vertically */
+    width: 65em; 
+    height: 45em;
+    background-color:white;            
+    margin: auto;
+    margin-top: 20%;
+  }
+  
+  .aside{
+    width: 18em;
+    height: 95%;
+    background: linear-gradient(216deg, rgba(98,89,255,1) 0%, rgba(98,89,255,1) 18%, rgba(25,15,203,1) 82%, rgba(98,89,255,1) 96%);
+    /* background-image: url('../public/mask.png'); */
+    background-blend-mode:color;
+   
+    background-repeat:repeat-y;
+    background-position: bottom;
+  
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 1em;
+    margin-left: 1%;
+  }
+  .circle-buttons-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-evenly; */
+    height: 60%;
+    margin-top: 2.6em;
+    gap: 10px;
+  }
+  .circle-button{
+    display: flex;
+    margin-left: 3em;
+    color:white;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background:transparent;
+    border: .2px white solid;
+    font-weight: 600;
+  }
+  .circle-button.active {
+    background-color: rgb(86, 170, 230);
+  }
+  
+  .button-text {
+    color: white;
+    margin-left: 1em;
+    font-size: 14;
+    font-weight: 700;
+   }
+   .lil_guy{
+    font-size: 12px;
+    font-weight: 200;
+   }
+  
+  
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+  }
+  
+  .blue-button {
+    background-color: lightblue;
+  }
+  .button-div{
+    position: absolute;
+    margin-top:  600px;
+    margin-left:53em;
+  
+  }
+  .goBackDiv{
+    display: inline-block;
+  margin-left: -30em;
+  text-decoration: underline;
+  }
+  .button, .button-add{
+    width: 9em;
+    height: 3em;
+    background-color: #022959;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 1em;
+    margin-left: 20em;
+  }
+  .button-add{
+    margin-bottom: 1em;
+    margin-left: 25em;
+  }
