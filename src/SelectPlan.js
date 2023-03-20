@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import AddOns from './AddOns';
 import Summary from './Summary';
+import {useNavigate} from 'react-router-dom';
+
 
 const SelectPlan = () => {
   const [selectedPlan, setSelectedPlan] = useState(localStorage.getItem('selectedPlan') || 'plan1');
@@ -12,7 +14,7 @@ const [customizableProfileChecked, setCustomizableProfileChecked] = useState(fal
 const [addPrice, setAddPrice] = useState(0);
 const [showAddOns, setShowAddOns] = useState(false);
 const [showSelectPlan, setShowSelectPlan] = useState(true); 
-
+const navigate = useNavigate();
   useEffect(() => {
     localStorage.setItem('selectedPlan', selectedPlan);
   }, [selectedPlan]);
@@ -116,6 +118,8 @@ return (
     )}
 
     {showAddOns && <AddOns />}
+    <div className='goBackDiv'>
+    <button className='goBack'onClick ={() =>  navigate(-1)}>Go Back</button></div>
   </div>
 );
 };

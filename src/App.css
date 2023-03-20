@@ -85,11 +85,11 @@
     margin-left:53em;
   
   }
-  .goBackDiv{
+  /* .goBackDiv{
     display: inline-block;
   margin-left: -30em;
   text-decoration: underline;
-  }
+  } */
   .button, .button-add{
     width: 9em;
     height: 3em;
